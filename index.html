@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typing Test</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Almarai:wght@300;400&family=Anton&family=Fredoka+One&family=Lobster&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="start-quiz">
+      <h1>Typing Test</h1>
+      <section class="level">
+        <label for="level">Select Level : </label>
+        <select name="level" id="level">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </section>
+      <section class="start-dialog-box">
+        <h2>Start Test</h2>
+        <section class="start-icon"></section>
+      </section>
+    </section>
+    <section class="typing-screen">
+      <section class="typing-dialog-box">
+        <section class="header">
+          <section class="timer-show">
+            00:
+            <span class="time">10</span>
+            <span>s</span>
+          </section>
+          <section class="score-show">
+            <span>score</span>
+            <span class="score">0</span>
+          </section>
+        </section>
+        <section class="quiz">
+          <section class="word">Word</section>
+          <input type="text" name="typed-word" id="typed-word" autofocus />
+        </section>
+        <section class="your-score">
+          <h2>Your score:</h2>
+          <p class="final-score"></p>
+          <section class="buttons">
+            <button class="home-page">Home-page</button>
+            <button class="retry">Retry</button>
+          </section>
+        </section>
+      </section>
+    </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
